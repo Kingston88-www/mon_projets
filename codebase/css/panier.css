@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f6f6f6;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+}
+
+.panier {
+    background: #fff;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    border-radius: 16px;
+    padding: 32px 24px;
+    margin: 16px;
+    display: flex;
+    flex-direction: column; /* Ajouté pour empiler les boutons verticalement */
+    align-items: center;
+    max-width: 320px;
+    transition: box-shadow 0.2s;
+}
+
+.panier:hover {
+    box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+}
+
+.panier img {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 18px;
+    border: 1px solid #eee;
+}
+
+.panier h3.name {
+    font-size: 1.4rem;
+    margin: 0 0 10px 0;
+    color: #222;
+    text-align: center;
+}
+
+.panier .description {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 12px;
+    text-align: center;
+    min-height: 40px;
+}
+
+.panier .prix {
+    font-size: 1.2rem;
+    color: #1a8917;
+    font-weight: bold;
+    margin-bottom: 18px;
+}
+
+.panier button.remove-btn {
+    background: #0f9e2e;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 24px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-bottom: 14px; /* Espace sous le bouton retirer */
+    transition: background 0.2s, transform 0.2s;
+    font-weight: 500;
+    box-shadow: 0 2px 8px rgba(231,76,60,0.08);
+}
+
+.panier button.remove-btn:hover {
+    background: #04f839;
+    transform: scale(1.05);
+}
+
+.panier button.commande {
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #28a745;
+    padding: 12px 28px;
+    font-weight: 600;
+    box-shadow: 0 2px 8px rgba(40,167,69,0.08);
+    transition: background 0.2s, transform 0.2s;
+}
+
+.panier button.commande:hover{
+    background-color: #18e745;
+    transform: scale(1.05);
+}

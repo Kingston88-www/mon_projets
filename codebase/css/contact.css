@@ -1,0 +1,104 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #f6f6f6;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.logo img{
+    height: 110px;
+    margin-left: 32px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgb(128, 121, 121, 0.08);
+}
+
+.contactForm {
+    max-width: 480px;
+    margin: 48px auto;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(26,137,23,0.08);
+    padding: 2.2rem 2rem 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    animation: fadeInUp 1s;
+}
+
+.contactForm h2 {
+    color: #1a8917;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+
+.contactForm input,
+.contactForm label{
+    padding: 0.7rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+.contactForm button {
+    background: #20ec19;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 0.9rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+    margin-top: 10px;
+    height: 50px;
+    width: 500px;
+    box-shadow: 0 2px 8px rgba(26,137,23,0.08);     
+}
+
+.contactForm button:hover {
+    background: #f10606;
+    transform: scale(1.03);
+}
+
+.contactForm .success {
+    color: #2e7d32;
+    background: #e8f5e9;
+    padding: 0.7rem;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-weight: 500;
+}
+
+.contactForm .error {
+    color: #c62828;
+    background: #ffebee;
+    padding: 0.7rem;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-weight: 500;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width:600px) {
+    .contactForm {
+        padding: 1rem;
+        max-width: 98vw;
+    }
+    input, textarea {
+        font-size: 1rem;
+    }
+}
